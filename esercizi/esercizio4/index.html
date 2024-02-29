@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio4</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins";
+      }
+      .container {
+        background-image: url("images/sfondo.png");
+        margin: auto;
+        width: 35%;
+        height: 100%;
+        background-color: red;
+      }
+      header {
+        margin: 20px;
+        padding: 10px;
+        background-color: #21a8ad;
+        box-shadow: 0 4px 2px grey;
+      }
+      header img {
+        width: 60%;
+        display: block;
+        margin: auto;
+      }
+      header h1 {
+        font-size: 1.5em;
+        margin-top: 30px;
+        color: white;
+        font-weight: 400;
+        text-align: center;
+      }
+      header h2 {
+        text-align: center;
+        font-weight: 300;
+        margin-top: 15px;
+        color: white;
+      }
+      header h2:first-of-type {
+        margin-top: 30px;
+      }
+      header h2:last-of-type {
+        margin-bottom: 20px;
+      }
+      main {
+        margin: 20px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 1px 4px 2px grey;
+      }
+      main h3 {
+        font-size: 35px;
+      }
+      main p:first-of-type {
+        margin: 20px 2px;
+        color: lightgray;
+      }
+      main p.p1 {
+        line-height: 20px;
+      }
+      .p2 {
+        margin-top: 20px;
+        line-height: 20px;
+      }
+      main ul {
+        list-style-type: disc;
+        list-style-position: outside;
+        margin: 20px;
+      }
+      main ol {
+        list-style-type: 1;
+        list-style-position: outside;
+        margin: 20px;
+      }
+      li span {
+        background-color: lightgrey;
+        border-radius: 5px;
+        border-color: #585757;
+      }
+      main li {
+        margin: 10px;
+        line-height: 25px;
+      }
+      .marked {
+        color: purple;
+      }
+      p {
+        line-height: 20px;
+      }
+      table {
+        width: 390px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+      }
+      table caption {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 15px;
+      }
+      th {
+        border-right: 1px solid white;
+        background-color: #2e19f0;
+        color: white;
+        height: 40px;
+      }
+      th,
+      td {
+        border-bottom: 1px solid lightgrey;
+        padding: 10px;
+      }
+      tr:nth-child(odd) {
+        background-color: #f1f1f1;
+      }
+      a.articles {
+        color: #03a1d6;
+      }
+      iframe {
+        margin-top: 20px;
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+      }
+      .sub-container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: lightgray;
+      }
+      .sub-container p.p3 {
+        color: black;
+      }
+      input[type="email"] {
+        padding: 5px;
+        border-bottom: 1px dashed grey;
+      }
+      button {
+        background-color: rgb(95, 95, 236);
+        padding: 4px 9px;
+      }
+      .sub-container span {
+        line-height: 30px;
+      }
+      .right {
+        width: 350px;
+        margin-left: 200px;
+      }
+      .footer {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 20px;
+        text-align: center;
+        background-image: linear-gradient(#052122, #091213);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/logo.svg" alt="logo" />
+        <h1>EPICODE - IL BLOG DEI DEVELOPERS</h1>
+        <h2>
+          <i class="fas fa-long-arrow-alt-right"> HOME</i>
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </h2>
+        <h2>
+          <i class="fas fa-long-arrow-alt-right"> ARTICOLI</i>
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </h2>
+        <h2>
+          <i class="fas fa-long-arrow-alt-right"> LAVORA CON NOI</i>
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </h2>
+      </header>
+      <main>
+        <h3>Come creare un template per i post</h3>
+        <p>
+          <i class="fas fa-pen-square"></i> di Mario Rossi -
+          <i class="fas fa-clock"></i> pubblicato il 25-10-2020
+        </p>
+        <p class="p1">
+          La prima cosa da fare è suddividere in blocchi logici la pagina,
+          identificando <span class="marked"> parti comuni</span> da applicare a
+          tutte le pagine
+        </p>
+        <p class="p2">
+          Le varie aree saranno quindi<br />
+          suddivise in:
+        </p>
+        <ul>
+          <li>Contenuti di intestazione del tag <span>&lt;header&gt;</span></li>
+          <li>
+            Contenti centrali variabili del tag <span>&lt;main&gt;</span> (corpo
+            principale)
+          </li>
+          <li>
+            Contenuti di fine pagina comuni, da inserire nel tag
+            <span>&lt;footer&gt;</span>
+          </li>
+        </ul>
+        <p>
+          Formattazione del codice<br />Il testo dell'articolo dovrà essere
+          formattato per identificare tutte le parti da
+          <span class="marked">selezionare con i CSS</span>. Perciò i passi
+          saranno:
+        </p>
+        <ol>
+          <li>
+            Progettare su carta il markup finale, assegnando ad ogni specifico
+            testo il tag appropriato
+          </li>
+          <li>
+            Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso
+            il basso
+          </li>
+          <li>Applicare gli stili CSS</li>
+        </ol>
+        <p>
+          L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere
+          la diffusione pressoché totale.
+        </p>
+        <table>
+          <caption>
+            Diffusione dei CSS
+          </caption>
+          <tr>
+            <th>Anno</th>
+            <th>% di utilizzo</th>
+            <th>Supporto browsers</th>
+          </tr>
+          <tr>
+            <td>2000</td>
+            <td>20%</td>
+            <td>17%</td>
+          </tr>
+          <tr>
+            <td>2002</td>
+            <td>35%</td>
+            <td>22%</td>
+          </tr>
+          <tr>
+            <td>2004</td>
+            <td>45%</td>
+            <td>42%</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>80%</td>
+            <td>51%</td>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>100%</td>
+            <td>76%</td>
+          </tr>
+        </table>
+        <p>
+          Un test di validazione potrà essere fatto tramite il
+          <a href="#" class="articles">tool online</a> dedicato allo scopo. Una
+          volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed
+          essere stati dei veri developers come loro:
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/aBSZVeBRvDY?si=N2bOmqjY73sDx9WG"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div class="sub-container">
+          <h4>NOVITA'</h4>
+          <p class="p3">
+            Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
+            nostra newletter:
+          </p>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="inserisci l'email"
+          />
+          <button>Iscriviti!</button>
+        </div>
+        <h4 style="text-align: center; margin: 20px">ARTICOLI CORRELATI</h4>
+        <div class="sub-container">
+          <a href="#" class="articles" style="display: block"
+            >Validare il codice HTML</a
+          >
+          <i class="fas fa-tag"></i><span> Categoria: develop</span><br />
+          <br />
+          <div class="right">
+            <i class="far fa-calendar-alt"></i><span>Data: 18-9-2020</span>
+          </div>
+        </div>
+        <div class="sub-container">
+          <a href="#" class="articles" style="display: block"
+            >Correggere la sintassi</a
+          >
+          <i class="fas fa-tag"></i><span> Categoria: develop</span><br />
+          <br />
+          <span class="right">
+            <i class="far fa-calendar-alt"></i><span>Data: 16-9-2020</span>
+          </span>
+        </div>
+        <div class="sub-container">
+          <a href="#" class="articles" style="display: block"
+            >Meno Kb nella pagina</a
+          >
+          <i class="fas fa-tag"></i><span> Categoria: ottimizzazione</span
+          ><br />
+          <br />
+          <span class="right">
+            <i class="far fa-calendar-alt"></i><span>Data: 30-9-2020</span>
+          </span>
+        </div>
+        <div class="footer">
+          <h4>Blog Epicode &#169;2021</h4>
+          <p>
+            Testata online di Mario Rossi, registrata con prot. n.213/2018 - via
+            Luigi Einaudi 2 - Milano. P.IVA 00112233.
+            <a href="#" style="color: purple">info@epicode.school</a>
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
