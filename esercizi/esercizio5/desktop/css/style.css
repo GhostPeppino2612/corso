@@ -1,0 +1,148 @@
+/* Your styles here */
+/* Your styles here */
+body {
+    font-size: 1.2rem;
+    font-family: "Open Sans";
+    line-height: 1.65;
+}
+.container {
+    margin: auto;
+    width: 60%;
+}
+header {
+    background-color: black;
+}
+header img {
+    margin-right: auto;
+    padding: 20px;
+    display: block;
+    width: 10%;
+    height: 45%;
+}
+
+article {
+    padding: 40px;
+    text-align: center;
+    background-image:url("/esercizi/esercizio5/mobile/images/banner.jpg");
+    background-size: 80%;
+    background-position: top;
+    height: 300px;
+}
+.format-h {
+    font-size: 20px;
+    font-family: "Montserrat (Bold)";
+    padding: 20px;
+    color: #25a2c3;
+    line-height: 1.5;
+    font-weight: 600;
+}
+p.format-p {
+    font-size: 15px;
+    padding: 10px;
+    color: #393d41 ;
+}
+article .button {
+    background-color: #f04c2f;
+    padding: 10px 25px;
+    width: 130px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+main h2.main-h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+main img.notebook {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 40%;
+    float: left;
+    height: auto;
+    padding: 20px;
+}
+section.testim {
+    margin: 100px 0 100px 0;
+    background-color: #f04c2f;
+    padding: 40px 20px 30px 20px;
+    text-align: center;
+}
+.testim h3 {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+.testim p:first-of-type {
+    font-size: 10px;
+    color: white;
+    padding: 20px;
+    font-style: italic;
+}
+.testim p {
+    font-size: 10px;
+    color: white;
+
+}
+p span.span-test {
+    font-size: 15px;
+}
+div.sub-container-card {
+    margin-left: 90px;
+    margin-right: 50px;
+}
+div.card {
+    width: 30%;
+    display: inline-block;
+    border: 1px solid #dee1e3;
+}
+div.card img {
+    width: 100%;
+    height: auto;
+}
+div.card .desc {
+    text-align: center;
+    padding: 0;
+}
+div.card .desc h4.card-h {
+    font-size: 15px;
+    padding: 0;
+}
+div.card .desc p.card-p {
+    font-size: 15px;
+}
+footer {
+    background-color: #25a2c3 ;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+footer h5 {
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+}
+footer a, i, span, .line {
+    font-size: 15px;
+    color: white;
+}
+footer span {
+    padding-bottom: 20px;
+}
+.line {
+    border-top: 1px solid white;
+    padding: 20px 5px;
+    color: white;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
