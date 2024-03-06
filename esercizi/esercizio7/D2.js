@@ -90,12 +90,12 @@ totalShoppingCart = 0;
 let ProductCost = 34;
 let BlackFriday = true;
 let Scount = 20 / 100;
-totalShoppingCart += ProductCost;
 if (BlackFriday === true) {
   totalShoppingCart *= Scount;
   console.log("Oggi è il black friday");
 }
 if (totalShoppingCart > 50) {
+  totalShoppingCart += ProductCost;
   console.log(
     "Hai diritto alla spedizione gratuita; il tuo totale è:",
     totalShoppingCart,
@@ -103,6 +103,7 @@ if (totalShoppingCart > 50) {
     (totalShoppingCart /= Scount)
   );
 } else {
+  totalShoppingCart += ProductCost;
   totalShoppingCart += ShippingCost;
   console.log(
     "Non hai diritto alla spedizione gratuita; il tuo totale è",
@@ -119,27 +120,41 @@ if (totalShoppingCart > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let N1 = 3;
-let N2 = 6;
-let N3 = 5;
+let num1 = 5;
+let num2 = 7;
+let num3 = 10;
+if (num1 > num2 > num3) {
+  console.log(num1, num2, num3);
+} else if (num2 > num1 > num3) {
+  console.log(num2, num1, num3);
+} else if (num2 > num3 > num1) {
+  console.log(num2, num3, num1);
+} else if (num3 > num2 > num1) {
+  console.log(num3, num2, num1);
+} else {
+  console.log(num1, num3, num2);
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const valorefornito = 50;
+if (typeof valorefornito === "number") {
+  console.log("il valore fornito è un numero");
+}
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
+
+/* SCRIVI QUI LA TUA RISPOSTA */
 let N4 = 4;
 if (N4 % 2 === 0) {
   console.log("il numero è divisibile per due");
 } else {
   console.log("il numero non è divisibile per due");
 }
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -154,7 +169,14 @@ if (N4 % 2 === 0) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let val = 1;
+if (val < 5) {
+  console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
@@ -166,27 +188,46 @@ const me = {
 };
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+me.city = "Toronto";
+// me["my-city"] = "Toronto" quando è scritto in questo modo
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+delete me.lastName;
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+me.skills.splice(2, 1);
+me.skills.pop(); // lo stesso
+
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const number = [];
+number.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+number[0] = 1;
+number[1] = 2;
+number[2] = 3;
+number[3] = 4;
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+number[9] = 100;
+number.splice(9, 1, 100);
+number.pop();
+number.push(100);
+
+ArrayVuoto[arrayVuoto.length - 1] = 100;
+console.log(arrayVuoto);
