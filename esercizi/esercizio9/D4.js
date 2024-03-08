@@ -69,6 +69,33 @@ const epify = function (inputString) {
   }
 };
 console.log(epify("ciao"));
+// controllo carattere per carattere
+
+/* const epi = "EPICODE"
+const epify = function (str) {
+  let result = true
+  if (typeof str === "string") {
+    for (let i = 0; i < epi.length; i++) {
+      if (!str[i] === epi[i]) {
+        result = false
+      }
+    }
+    retun result
+  } else {
+    console.log("inserisci una stringa per favore")
+    return false
+  }
+}
+
+const epify2 = function(str) {
+  let wordIndex = str.indexOf(epi) //mi restituisce l'indice della posizione di epicode
+  if (wordIndex === 0) {
+    return str
+  } else {
+    return epi + str
+  }
+}
+
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
@@ -91,9 +118,17 @@ console.log(check3and7(15));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const reverseString = function (inputString) {
-  return inputString.split("").reverse();
+  let word = "";
+  const stringArray = inputString.split("").reverse();
+  for (let i = 0; i < stringArray.length; i++) {
+    word += stringArray[i];
+  }
+  return word;
 };
 console.log(reverseString("EPICODE"));
+
+// join("") fa ritornare un array una stringa
+
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
@@ -101,11 +136,25 @@ console.log(reverseString("EPICODE"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const upperFirst = function (inputString) {
-  return inputString
-    .split(" ")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
+/* const upperFirst = function (inputString) {
+  const wordSplit = inputString.split(" ");
+  let totalWord = "";
+  let partialWord = "";
+  for (let i = 0; i < wordSplit.length; i++) {
+    partialWord += wordSplit[i].charAt(0);
+    totalWord = partialWord + wordSplit
+  }
+  return partialWord;
+}; */
+const upperFirst = function (sentence) {
+  const arrayOfWords = sentence.split(" ");
+  let resultString = "";
+  for (let i = 0; i < arrayOfWords.length; i++) {
+    resultString +=
+      arrayOfWords[i].charAt(0).toUpperCase() + arrayOfWords[i].slice(1);
+    resultString += " ";
+  }
+  return resultString;
 };
 console.log(upperFirst("il fenomeno ciao sono il fenomeno"));
 /* ESERCIZIO 9
@@ -115,15 +164,22 @@ console.log(upperFirst("il fenomeno ciao sono il fenomeno"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const cutString = function (inputString) {
-  return inputString.charAt(0);
-  return inputString.charAt(length - 1);
+const cutString = function (str) {
+  return str.slice(1, str.length - 1);
 };
-console.log(cutString("sono giuseppe"));
+console.log(cutString("EPICODE"));
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const giveMeRandom = function (number1) {};
+const giveMeRandom = function (number1) {
+  const randomNumbers = [];
+  for (let i = 0; i < number1; i++) {
+    const randomNumber = Math.floor(Math.random() * 11);
+    randomNumbers.push(randomNumber);
+  }
+  return randomNumbers;
+};
+console.log(giveMeRandom(5));

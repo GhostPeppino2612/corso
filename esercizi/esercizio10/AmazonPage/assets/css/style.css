@@ -1,0 +1,111 @@
+/* Your styles here */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9edee;
+}
+header {
+    background-color: #222f3f;
+}
+header img {
+    display: block;
+    width: 10%;
+    padding: 10px 40px;
+}
+header nav {
+    background-color: #364759;
+}
+header li {
+    color: white;
+    display: inline-block;
+    margin: 10px 20px;
+}
+header li:first-of-type {
+    margin-left: 45px;
+}
+main {
+    margin: auto;
+    width: 96%;
+
+}
+div.holiday-gifts {
+    background-color: #f56600;
+    padding: 10px;
+    margin: 30px 0;
+    text-align: center;
+    color: white;
+
+}
+div.first-img {
+    background-image: url(/esercizi/esercizio10/AmazonPage/assets/images/bg-image.png);
+    padding: 50px;
+    text-align: center;
+    color: white;
+    line-height: 1.8;
+    font-weight: bold;
+    font-size: 20px;
+}
+div.title {
+    padding-bottom: 10px;
+}
+div.title h3, h4 {
+    display: inline;
+}
+div.title a {
+    text-decoration: none;
+    color: #2a6e79;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 13px;
+}
+div.cards {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px 0;
+    overflow: auto;
+}
+
+div.sub-container-foto {
+    float: left;
+    text-align: center;
+}
+div.cards img {
+   width: 250px;
+   height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 3px 3px 1px #cad1d2;
+    margin-right: 180px;
+}
+
+div.second-img {
+    background-image: url(/esercizi/esercizio10/AmazonPage/assets/images/img_9.png);
+    padding: 300px;
+    background-size: 100% 100%;
+}
+
+div.third-img {
+    background-image: url(/esercizi/esercizio10/AmazonPage/assets/images/img_10.png);
+    padding: 300px;
+    background-size: 100% 100%;
+    margin: 20px 0 0;
+
+}
+.return {
+    background-color: #364759;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.return a {
+    color: white;
+}
+.logo-image {
+    padding: 20px;
+    background-color: #222f3f;
+}
+.logo-image img {
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
