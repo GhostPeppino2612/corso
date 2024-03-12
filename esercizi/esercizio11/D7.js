@@ -55,15 +55,23 @@ console.log(risultat);
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+const newArray = [2, 5, 4, 7, 12];
+let sum = 0;
+newArray.forEach((number) => (sum += number));
 
+console.log(sum);
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
-
+newArray.reduce((total, currentValue) => (total += currentValue));
+console.log(sum);
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
-
+const func = function (newArray) {
+  newArray.forEach((number) => console.log(number));
+};
+console.log(func());
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
