@@ -132,10 +132,12 @@
             */
 
       const addParagraph = function () {
-        const allDiv = document.querySelector("div");
-        const srcDiv = allDiv;
+        const srcDiv = document.querySelector("body > div:first-of-type");
+        const newP = document.createElement("p");
+        newP.innerText = "questo è un nuovo paragrafo";
+        srcDiv.appendChild(newP);
       };
-
+      addParagraph();
       /* ESERCIZIO 7
                Scrivi una funzione che faccia scomparire la prima lista non ordinata
             */
