@@ -23,7 +23,7 @@ form {
     margin-inline: auto;
     width: 50%;
 }
-input#nomeTask {
+input#nameTask {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;

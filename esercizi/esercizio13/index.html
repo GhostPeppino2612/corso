@@ -12,10 +12,10 @@
       <div class="new-task">
         <h2>Crea una nuova Task</h2>
         <form>
-          <label for="nomeTask">Nome della Task:</label>
+          <label for="nameTask">Nome della Task:</label>
           <input
             type="text"
-            id="nomeTask"
+            id="nameTask"
             placeholder="Inserire il nome della task..."
           />
           <input type="submit" value="Crea" id="createTask" />
@@ -30,14 +30,16 @@
       </div>
     </main>
     <script>
-      const ul = document.getElementsByTagName("ul");
-      const newLi = document.createElement("li");
-      const h1 = document.querySelector("h1");
-      const nameTask = document.getElementById("nomeTask");
-      const inputBtn = document.querySelector("createTask");
-      inputBtn.onclick = () => {
-        h1.innerText = nameTask.value;
-      };
+      const inputBtn = document.getElementById("createTask");
+      inputBtn.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const ul = document.querySelector("ul");
+        const newLi = document.createElement("li");
+        const nameTask = document.getElementById("nameTask");
+
+        newLi.innerText = nameTask.value;
+        ul.appendChild("newLi");
+      });
     </script>
   </body>
 </html>

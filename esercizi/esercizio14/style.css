@@ -1,0 +1,23 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body h1 {
+    text-align: center;
+    
+}
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+.tombolone {
+    margin-inline: auto;
+    width: 750px;
+    border: 1px solid black;
+}
+.tombolone .box {
+    text-align: center;
+    border: 1px solid black;
+    width: 9%;
+  display: inline-block;
+}
