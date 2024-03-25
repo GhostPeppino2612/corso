@@ -42,7 +42,22 @@ header nav li a:hover {
 header nav li a::before {
     content: "\22c6\0020";
 }
+.html-container {
+    display: none;
+    width: 5em;
+    margin-bottom: 0.5em;
+}
+.html-container .b-purple {
+    border: 3px solid #9e1f6d;
 
+}
+.html-container .b-acqua {
+    border: 3px solid #009ec5;
+}
+.html-container img {
+    width: 100%;
+    vertical-align: middle;
+}
 /* MAIN */
 main {
     background-color: #fff;
@@ -179,62 +194,85 @@ footer a {
     color: fuchsia;
 }
 @media screen and (max-width: 1200px) {
-    header div, header div img, header nav, header div p, header ul li {
+    header div, header div img, header div p, header nav li {
         display: inline-block;
     }
     header {
-        text-align: unset;
-        margin-bottom: 1.5em;
-        padding: unset;
+        text-align: left;
+        padding: 1em 1em;
     }
     header div img {
         margin-bottom: unset;
-        transform: translateY(10px);
+        vertical-align: middle;
     }
     header nav {
+        vertical-align: middle;
         float: right;
-        margin-right: 20px;
-        transform: translateY(30px);
     }
-    header div p {
-        transform: translateY(-15px);
+    article h1 {
+        font-size: 3em;
+    }
+    .html-container {
+        display: block;
     }
     table {
+        width: 80%;
         margin-inline: auto;
-        min-width: 75%;
     }
     .container iframe {
-        margin-bottom: unset;
+        display: inline-block;
         width: 50%;
+        vertical-align: middle;
     }
-    
     .container section {
         display: inline-block;
         width: 49%;
-    }
-    aside {
-        margin-inline: auto;;
+        vertical-align: middle;
     }
     aside div {
-        display: inline-block;
         width: 33%;
+        display: inline-block;
+        margin-right: -4px;
     }
 }
-@media screen and (max-width: 768px) and (max-width: 576px) {
-    header div, header div img, header nav, header div p, header ul li {
+@media screen and (max-width: 768px) {
+    header div, header div img, header div p, header nav li {
         display: block;
     }
-
+    header {
+        text-align: center;
+        padding: 1em 1em;
+    }
     header div img {
-        margin-bottom: unset;
-        transform: unset;
+        margin-bottom: 20px;
+        vertical-align: unset;
+        margin-inline: auto;
     }
     header nav {
+        vertical-align: unset;
         float: unset;
-        margin-right: unset;
-        transform: unset;
     }
-    header div p {
-        transform: unset;
+    .container iframe {
+        display: block;
+        width: 100%;
+        vertical-align: unset;
+    }
+    .container section {
+        display: inline-block;
+        width: 100%;
+        vertical-align: unset;
+    }
+    aside div {
+        width: 100%;
+        display: block;
+        margin-right: unset;
+}}
+@media screen and (max-width: 448px) {
+    header nav li {
+        display: inline-block;
+    }
+    table {
+        width: unset;
+        margin-inline: unset;
     }
 }
