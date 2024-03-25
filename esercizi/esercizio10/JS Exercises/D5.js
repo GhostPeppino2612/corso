@@ -11,11 +11,9 @@ REGOLE
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
 const pets = ["dog", "cat", "hamster", "redfish"];
-let totalWord = "";
 for (let i = 0; i < pets.length; i++) {
-  totalWord = totalWord + pets[i] + " ";
+  console.log(pets[i]);
 }
-console.log(totalWord);
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
@@ -25,15 +23,12 @@ console.log(pets);
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
 pets.reverse();
-for (let i = 0; i < pets.length; i++) {
-  totalWord = totalWord + pets[i] + " ";
-}
 console.log(pets);
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
-const firstPet = pets.shift();
-pets.push(firstPet);
+pets.push(pets[0]);
+pets.shift();
 console.log(pets);
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
@@ -105,7 +100,10 @@ const numericArray = [
 ];
 let i = 0;
 while (i < numericArray.length) {
-  if (numericArray[i] <= 32) {
+  if (numericArray[i] === 32) {
+    break;
+  }
+  {
     console.log(numericArray[i]);
   }
   i++;
