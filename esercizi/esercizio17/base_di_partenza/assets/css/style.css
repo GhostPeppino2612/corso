@@ -101,6 +101,32 @@ right: 100px;
 top: 100px;
 }
 
+.container .plus, .container .calendar, .container .go-top {
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 5px;
+  border: 2px solid white;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  text-align: center;
+}
+.container .plus {
+  top: 15px;
+  right: 10px;
+}
+.container .calendar {
+  top: 60px;
+  right: 10px;
+}
+.container .go-top {
+  right: 10px;
+  bottom: 50px;
+}
+.fa-regular.fa-square-plus, .fas.fa-calendar-alt, .fa-regular.fa-circle-up {
+  font-size: 1.5em;
+  vertical-align: middle;
+  color: blue;
+}
 @media screen and (min-width: 700px) {
   main {
     padding: 2em;
@@ -167,7 +193,15 @@ h1 + p {
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
+    .container .plus {
+      top: unset;
+      bottom: 150px;
+    }
+    .container .calendar {
+      top: unset;
+      bottom: 100px;
+    }
   h1 {
     font-size: 3rem;
   }
@@ -183,7 +217,6 @@ h1 + p {
     font-weight: 700;
   }
 }
-
 @media screen and (min-width: 700px) {
   h1 {
     font-size: 3.6rem;
