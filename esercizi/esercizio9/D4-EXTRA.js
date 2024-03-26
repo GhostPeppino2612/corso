@@ -141,12 +141,14 @@ Crea una funzione chiamata "average" che riceve un array come parametro e ne rit
 const array1 = [1, "ciucc", 67, 23, "ciao", 89];
 const average = (array) => {
   let tot = 0;
+  let count = 0;
   array.forEach((element) => {
     if (typeof element === "number") {
+      count++;
       tot += element;
     }
   });
-  return (tot /= array.length);
+  return (tot /= count);
 };
 console.log(average(array1));
 /* EXTRA 8
@@ -154,7 +156,17 @@ console.log(average(array1));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const array2 = ["ciucc", "dd", "ccc", "rerere", "ciuccccc", "tt"];
+const longest = (array) => {
+  let longestString = "";
+  array.forEach((string) => {
+    if (string.length > longestString.length) {
+      longestString = string;
+    }
+  });
+  return longestString;
+};
+console.log(longest(array2));
 /* EXTRA 9
  Crea una funzione per creare un filtro anti-spam per la tua casella email. La funzione riceve un parametro stringa chiamato "emailContent", e torna un valore booleano.
  La funzione deve ritornare true se "emailContent" non contiene le parole "SPAM" o "SCAM".
