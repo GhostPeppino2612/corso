@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.flex-container {
+    display: flex;
+} 
+.header-flex-container {
+    display: flex;
+    background-color: #fef7e2;
+    flex-direction: column;
+    padding: 2em;
+    
+}
+.header-flex-container .menu-button img {
+    width: 50%;
+    vertical-align: middle;
+}
+.header-flex-container .menu-button {
+    text-align: center;
+    margin: 1em 0;
+    border-radius: 50px;
+    background-color: #ffdf7f;
+    width: 150px;
+    padding: 2em;
+}
+.header-flex-container .menu-button span {
+    vertical-align: middle;
+    color: #6f1c01;
+    font-weight: 700;
+    font-size: 0.8em;
+}
+main {
+    padding: 0 3em;
+}
+main h2 {
+    color: #6f1c01;
+    font-weight: 800;
+}
+.card {
+    border-radius: 30px;
+    overflow: hidden;
+    width: 33%;
+    margin-right: 10px;
+}
+.card img {
+    width: 100%;
+}
+.card .card-content .sub-content, .card .card-content .price {
+    display: inline-block;
+    color: #6f1c01;
+}
+.card .card-content {
+    background-color: #fef7e2;
+    padding-bottom: 0.5em;
+}
+.card .card-content .sub-content {
+    font-size: 1em;
+    line-height: 0.01;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 1em;
+    
+}
+.card .card-content .price {
+    padding-left: 2em;
+    vertical-align: middle;
+}
+.card .card-content .add-to-cart {
+    color: #6f1c01;
+    text-align: center;
+    background-color: #ffdf7f;
+    width: 150px;
+    border-radius: 20px;
+    margin-inline: auto;
+    padding: 0.5em;
+}
+.cards-flex-container {
+    display: flex;
+    flex-direction: row;
+}
+.news-flex-container  {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    background-color:#fef7e2;
+    border-radius: 20px;
+}
+.news-flex-container .item div {
+    margin-left: 20px;
+}
+@media screen and (max-width: 1200px) {
+    .none {
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .none {
+        display: block;
+    }
+    .news-flex-container {
+        flex-direction: column-reverse;
+    }
+    .news-flex-container .item div {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 772px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .header-flex-container {
+        flex-direction: row;
+    }
+    .first-btn {
+        order: 3;
+    }
+    .card {
+        width: 50%;
+    }
+}
