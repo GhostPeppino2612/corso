@@ -1,0 +1,62 @@
+body {
+    background-color: #666666;
+    font-family: "Indie flower";
+    font-size: 40px;
+}
+.container {
+    margin-block: 1em;
+    width: 95%;
+    margin-inline: auto;
+}
+.postit {
+    width: 350px;
+    height: 250px;
+    display: inline-block;
+    margin-inline: 40px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 1.8;
+    margin-block: 30px;
+    transition: transform 0.7s;
+}
+.postit:hover {
+    transform: scale(1.2);
+}
+.postit h1 {
+    font-weight: bold;
+}
+
+.yellow {
+    background-image: linear-gradient(to bottom, #f9fbc8 70%, #bdbda3 );
+}
+.green {
+    background-image: linear-gradient(to bottom, #c8f8ca 70%, #9eb5a1 );
+}
+.purple {
+    background-image: linear-gradient(to bottom, #c7c7f4 70%, #8b8d9c );
+}
+.post1 {
+    transform: rotateZ(-5deg);
+
+}
+.post2 {
+    transform: rotateZ(7deg);
+}
+.post3 {
+    transform: rotateZ(-10deg);
+}
+.post4 {
+    transform: rotateZ(7deg);
+}
+.post5 {
+    transform: rotateZ(-6deg);
+}
+.post6 {
+    transform: rotateZ(-10deg);
+}
+.post7 {
+    transform: rotateZ(-7deg);
+}
+.post8 {
+    transform: rotateZ(7deg);
+}

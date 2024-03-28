@@ -92,33 +92,53 @@ main h2 {
 .news-flex-container .item div {
     margin-left: 20px;
 }
-@media screen and (max-width: 1200px) {
+
+.order1 {
+    order: 1;
+}
+
+.order3 {
+    order: 3;
+}
+@media screen and (max-width: 1331px) {
     .none {
         display: none;
     }
-}
-@media screen and (max-width: 900px) {
-    .none {
-        display: block;
-    }
     .news-flex-container {
         flex-direction: column-reverse;
+        justify-content: center;
     }
     .news-flex-container .item div {
         margin-bottom: 20px;
     }
 }
-@media screen and (max-width: 772px) {
+@media screen and (max-width: 1125px) {
+    .cards-flex-container .other-none {
+        display: none;
+    }
+}
+@media screen and (max-width: 972px) {
     .flex-container {
         flex-direction: column;
     }
     .header-flex-container {
         flex-direction: row;
+        justify-content: center;
     }
-    .first-btn {
+    .order1 {
         order: 3;
     }
-    .card {
-        width: 50%;
+    
+    .order3 {
+        order: 1;
+    }
+    .cards-flex-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    .cards-flex-container {
+        flex-direction: column;
     }
 }
